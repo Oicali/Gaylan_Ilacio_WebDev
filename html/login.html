@@ -3,25 +3,97 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login Form</title>
+    <title>Login | ShannArts</title>
     <link rel="stylesheet" href="/css/login_style.css" />
+    <link rel="icon" type="image/x-icon" href="/img/logo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    
-    <div class="login-container">
-      <img src="/img/logo.png" alt="ShannArts Logo" class="logo" />
-      <h1 class="website-name">ShannArts</h1>
-      <h2>Login</h2>
+    <div class="wrapper">
+      <div class="login-container sign-up">
+        <form action="#">
 
-      <form>
-        <input type="text" placeholder="Email" class="input-field" />
-        <input type="password" placeholder="Password" class="input-field" />
-        <button type="submit" class="login-btn">Log In</button>
-        <button type="button" class="signup-btn">Sign Up</button>
-      </form>
 
-      <a href="#" class="forgot-password">Forgot Password?</a>
+          <h2>Sign Up</h2>
+          
+          <div class="form-group">
+            <input type="text" required />
+            <i class="ri-user-3-fill"></i>
+            <label for="">Username</label>
+          </div>
+
+          <div class="form-group">
+            <input type="email" required />
+            <i class="ri-mail-fill"></i>
+            <label for="">Email</label>
+          </div>
+
+          <div class="form-group">
+            <input type="tel" required />
+            <i class="ri-phone-fill"></i>
+            <label for="">Mobile Number</label>
+          </div>
+
+
+          <div class="form-group">
+            <input type="password" required />
+            <i class="ri-lock-2-fill"></i>
+            <label for="">Password</label>
+          </div>
+
+          <div class="form-group">
+            <input type="password" required />
+            <i class="ri-lock-2-fill"></i>
+            <label for="">Confirm Password</label>
+          </div>
+
+          <button type="submit" class="btn">Sign Up</button>
+
+          <div class="link">
+            <p>Already have an account?</p>
+            <a href="#" class="signin-link"> Sign In</a>
+          </div>
+
+        </form>
+      </div>
+      
+      <div class="login-container sign-in">
+        <form action="#">
+          <img src="/img/logo.png" alt="ShannArts Logo" class="logo" />
+          <h1 class="website-name">ShannArts</h1>
+          <h2>Login</h2>
+          <div class="form-group">
+            <input type="text" required />
+            <i class="ri-user-3-fill"></i>
+            <label for="">Username</label>
+          </div>
+
+          <div class="form-group">
+            <input type="password" required />
+            <i class="ri-lock-2-fill"></i>
+            <label for="">Password</label>
+          </div>
+
+          <div class="forgot-pass">
+            <a href="#">Forgot Password?</a>
+          </div>
+
+          <button type="submit" class="btn">Login</button>
+
+          <div class="link">
+            <p>Don't have an account?</p>
+            <a href="#" class="signup-link"> Sign Up</a>
+          </div>
+
+        </form>
+      </div>
     </div>
-    
+
+    <script src="/js/login_script.js"></script>
+
+
   </body>
 </html>

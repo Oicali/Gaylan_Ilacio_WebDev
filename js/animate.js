@@ -34,6 +34,9 @@ document.querySelectorAll('.product-card.animate').forEach(el => {
   staggeredObserver.observe(el);
 });
 
+
+
+
   
   
 
