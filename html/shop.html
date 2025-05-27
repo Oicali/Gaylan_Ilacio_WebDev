@@ -3,44 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Arts and Craft Shop Center | ShannArts</title>
+    <title>Shop Center | ShannArts</title>
     <link rel="stylesheet" href="/css/shop_style.css" />
+    <link rel="icon" type="image/x-icon" href="/img/logo.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/x-icon" href="/img/logo.png">
+    <link rel="icon" type="image/x-icon" href="/img/logo.png" />
   </head>
 
   <body>
-    <!-- Header Section-->
     <nav>
+      <!-- <a href="/html/index.html">
+        
+      </a> -->
+
       <div class="logo-container">
-        <img class="logo" src="/img/logo.png" alt="ShannArts Logo" />
-        <span class="website-name">ShannArts</span>
+          <img class="logo" src="/img/logo.png" alt="ShannArts Logo" />
+          <span class="website-name">ShannArts</span>
       </div>
 
-      <div class="search-container">
+
+      
+
+      <!-- <div class="search-container">
         <input type="text" placeholder="Search..." class="search-input" />
         <button type="submit" class="search-button">
           <i class="ri-search-line"></i>
         </button>
-      </div>
+      </div> -->
 
       <div class="icons-container">
-        <a href="#" class="icons" id="cart-icon">
+        <a href="/html/cart.html" class="icons" id="cart-icon">
           <i class="ri-shopping-bag-4-line"></i>
           <span class="cart-item-count"></span>
         </a>
         <a href="login.html" class="icons">
-            <div class="user-icon-container">
-                <img id="user-image" src="/img/user-icon.jpg"/>Username
-            </div>
+          <div class="user-icon-container">
+            <img id="user-image" src="/img/user-icon.jpg" />Username
+          </div>
         </a>
       </div>
     </nav>
+    <!-- Shop Section-->
+    <section class="product-collection">
+        <h1>Our Featured Products</h1>
+        <p>Your one-stop shop for all things art!</p>
 
-    <!-- Main Content Section-->
+      <div class="product-list"></div>
+    </section>
 
+    <script src="/js/products.js"></script>
+    <script src="/js/shop_script.js"></script>
   </body>
 </html>
