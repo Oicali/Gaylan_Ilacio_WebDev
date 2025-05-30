@@ -530,7 +530,7 @@ header .order-btn:hover {
 .reviews-container .slide-track {
   display: flex;
   width: calc(400px * 14); /* Adjusted based on your image count */
-  animation: scroll 40s linear infinite;
+  animation: scroll 30s linear infinite;
   gap: 27px;
 }
 
