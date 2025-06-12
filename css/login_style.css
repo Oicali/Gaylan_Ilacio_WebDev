@@ -195,6 +195,38 @@ form .form-group input:valid ~ i {
   animation: signin-flip 1s ease-in-out forwards;
 }
 
+.toast {
+  position: fixed;
+  top: 10px; /* Place at the top */
+  left: 50%;
+  transform: translateX(-50%) translateY(-30px); /* Center and shift up */
+  background: #c8103b;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  opacity: 0;
+}
+
+.toast.show {
+  animation: fadeIn-slideDown 0.5s forwards;
+}
+
+.toast.hidden {
+  display: none;
+}
+
+@keyframes fadeIn-slideDown {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(10px); /* Slides down smoothly */
+  }
+}
 @keyframes signin-flip {
   0% {
     transform: translateX(0);

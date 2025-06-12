@@ -39,7 +39,11 @@ document.querySelectorAll('.product-card.animate').forEach(el => {
 
   
   
-
+document.querySelectorAll(".product-card").forEach(card => {
+  card.addEventListener("click", () => {
+    window.location.href = "/html/login.html";
+  });
+});
   
 
 
